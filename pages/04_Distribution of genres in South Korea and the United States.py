@@ -13,10 +13,8 @@ usa_data = data[data['country'] == 'United States']
 # Tab 구성
 tab1, tab2 = st.tabs(["South Korea", "United States"])
 
-sk_data_counts = sk_data['type'].value_counts()
-usa_data_counts = usa_data['type'].value_counts()
-
-
+# sk_data_counts = sk_data['type'].value_counts()
+# usa_data_counts = usa_data['type'].value_counts()
 
 st.title("South Korea-Data")
 sk_data = data[data['country'] == 'South Korea']
