@@ -27,9 +27,9 @@ sk_top_10_genres = genre_table.head(10)
 usa_genre_counts = data['listed_in'].str.split(',').explode().str.strip().value_counts()
 
 # DataFrame 생성
-genre_table = pd.DataFrame({'Genre': usa_genre_counts.index, 'Count': usa_genre_counts})
+us_genre_table = pd.DataFrame({'Genre': usa_genre_counts.index, 'Count': usa_genre_counts})
 
-usa_top_10_genres = genre_table.head(10)
+usa_top_10_genres = us_genre_table.head(10)
 
 with tab1:
   plt.pie(sk_top_10_genres.Count, labels=sk_top_10_genres.index, autopct='%1.1f%%')
