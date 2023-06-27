@@ -29,7 +29,7 @@ with tab2:
   plt.bar(type_counts.index, type_counts.values, color= color)
   plt.xlabel('Year')
   plt.ylabel('Count')
-  plt.xticks(rotation=45)
+  plt.xticks(usa_type_counts.index, usa_type_counts.index.astype(int), rotation=45)
   plt.title('Netflix Shows in the United States')
   plt.show()
   st.pyplot(plt)
