@@ -26,8 +26,7 @@ with tab1:
             wedgeprops={'edgecolor': 'white', 'width': 0.7}, colors=colors)
     plt.axis('equal')
     plt.title('Netflix Shows in South Korea')
-    plt.show()
-    st.pyplot(plt)
+    st.pyplot(plt1)
 
 with tab2:
     #usa_data_counts = usa_data['type'].value_counts()
@@ -36,8 +35,7 @@ with tab2:
             wedgeprops={'edgecolor': 'white', 'width': 0.7}, colors=colors)
     plt.axis('equal')
     plt.title('Netflix Shows in the United States')
-    plt.show()
-    st.pyplot(plt)
+    st.pyplot(plt2)
 
 with tab3:
     #sk_data_counts = sk_data['type'].value_counts()
@@ -49,5 +47,4 @@ with tab3:
     plt.ylabel('Count')
     plt.title('Netflix Shows Comparison')
     plt.legend()
-    plt.show()
-    st.pyplot(plt)
+    st.pyplot(plt3)
