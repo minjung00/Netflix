@@ -42,10 +42,10 @@ with tab1:
 
 with tab2:
   #파이 차트
-  plt1.pie(usa_top_10_genres.Count, labels=usa_top_10_genres.index, autopct='%1.1f%%')
+  plt.pie(usa_top_10_genres.Count, labels=usa_top_10_genres.index, autopct='%1.1f%%')
 
   #차트 제목
-  plt1.title('Netflix genres in the United States')
+  plt.title('Netflix genres in the United States')
 
   #출력
-  st.pyplot(plt1)
+  st.pyplot(plt)
