@@ -23,15 +23,13 @@ with tab1:
   plt.title('Distribution of Top 10 Ratings for Netflix Content in the South Korea')
   
   # 그래프 출력
-  plt.show()
   st.pyplot(plt)
   
 with tab2:
-  plt.pie(usa_rating_counts, labels=rating_counts.index, autopct='%1.1f%%', colors=['skyblue', 'limegreen', 'orange', 'red', 'purple'])
+  plt.pie(usa_rating_counts, labels=usa_rating_counts.index, autopct='%1.1f%%', colors=['skyblue', 'limegreen', 'orange', 'red', 'purple'])
   
   # 그래프 제목 설정
   plt.title('Distribution of Top 10 Ratings for Netflix Content in the United States')
   
   # 그래프 출력
-  plt.show()
   st.pyplot(plt)
