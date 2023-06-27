@@ -27,6 +27,7 @@ with tab1:
     plt.axis('equal')
     plt.title('Netflix Shows in South Korea')
     st.pyplot(plt)
+    plt.show()
 
 with tab2:
     #usa_data_counts = usa_data['type'].value_counts()
@@ -36,6 +37,7 @@ with tab2:
     plt.axis('equal')
     plt.title('Netflix Shows in the United States')
     st.pyplot(plt)
+    plt.show()
 
 with tab3:
     #sk_data_counts = sk_data['type'].value_counts()
@@ -48,3 +50,4 @@ with tab3:
     plt.title('Netflix Shows Comparison')
     plt.legend()
     st.pyplot(plt)
+    plt.show()
