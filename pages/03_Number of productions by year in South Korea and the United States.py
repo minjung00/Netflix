@@ -16,8 +16,7 @@ sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']
 
 sk_type_counts = sk_data['release_year'].value_counts().sort_index()
-usa_data_counts = usa_data['type'].value_counts()
-
+type_counts = usa_data['release_year'].value_counts().sort_index()
 
 with tab1:
     #색깔
@@ -30,7 +29,7 @@ with tab1:
   plt.xticks(sk_type_counts.index, sk_type_counts.index.astype(int), rotation=45)
   plt.title('Netflix Shows in the South Korea')
   plt.show()
-  st.pyplot()
+  st.pyplot(plt)
 
 with tab2:
     #색깔
@@ -43,4 +42,4 @@ with tab2:
   plt.xticks(rotation=45)
   plt.title('Netflix Shows in the United States')
   plt.show()
-  st.pyplot()
+  st.pyplot(plt)
