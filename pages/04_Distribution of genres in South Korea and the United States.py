@@ -35,7 +35,7 @@ with tab1:
   plt.pie(sk_top_10_genres.Count, labels=sk_top_10_genres.index, autopct='%1.1f%%')
 
   #차트 제목
-  plt.title('Netflix Shows in the South Korea')
+  plt.title('Netflix genres in the South Korea')
 
   #출력
   plt.show()
@@ -46,7 +46,7 @@ with tab2:
   plt.pie(usa_top_10_genres.Count, labels=usa_top_10_genres.index, autopct='%1.1f%%')
 
   #차트 제목
-  plt.title('Netflix Shows in the United States')
+  plt.title('Netflix genres in the United States')
 
   #출력
   plt.show()
