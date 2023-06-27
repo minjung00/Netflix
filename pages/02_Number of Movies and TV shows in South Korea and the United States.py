@@ -38,7 +38,7 @@ with tab1:
     plt.axis('equal')
     plt.title('Netflix Shows in the South Korea')
     plt.show()
-    st.pyplot(plt)
+    st.pyplot()
    
 with tab2:
     #''type' 열 기준으로 데이터 분류
