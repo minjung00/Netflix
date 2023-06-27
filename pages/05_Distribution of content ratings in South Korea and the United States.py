@@ -27,14 +27,11 @@ with tab1:
   st.pyplot(plt)
   
 with tab2:
-  # plt.pie(usa_rating_counts, labels=usa_rating_counts.index, autopct='%1.1f%%', colors=['skyblue', 'limegreen', 'orange', 'red', 'purple'])
+  plt.pie(usa_rating_counts, labels=usa_rating_counts.index, autopct='%1.1f%%', colors=['skyblue', 'limegreen', 'orange', 'red', 'purple'])
   
-  # # 그래프 제목 설정
-  # plt.title('Distribution of Top 10 Ratings for Netflix Content in the United States')
+  # 그래프 제목 설정
+  plt.title('Distribution of Top 10 Ratings for Netflix Content in the United States')
   
-  # # 그래프 출력
-  # st.pyplot(plt)
-
-    fig = go.Figure(data=[go.Pie(labels=sk_rating_counts.index, values=sk_rating_counts)])
-    fig.update_layout(title_text='Distribution of Top 10 Ratings for Netflix Content in South Korea')
-    st.plotly_chart(fig)
+   # 그래프 출력
+  st.pyplot(plt)
+  
