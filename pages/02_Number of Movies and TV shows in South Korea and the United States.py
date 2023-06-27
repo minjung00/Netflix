@@ -18,13 +18,13 @@ tab1, tab2, tab3 = st.tabs(["South Korea", "United States", "Comparison"])
 # sk_data_counts = sk_data['type'].value_counts()
 # usa_data_counts = usa_data['type'].value_counts()
 
-st.title("South Korea-Data")
-sk_data = data[data['country'] == 'South Korea']
-st.write(sk_data)
+# st.title("South Korea-Data")
+# sk_data = data[data['country'] == 'South Korea']
+# st.write(sk_data)
 
-st.title("United States-Data")
-usa_data = data[data['country'] == 'United States']
-st.write(usa_data)
+# st.title("United States-Data")
+# usa_data = data[data['country'] == 'United States']
+# st.write(usa_data)
 
 with tab1:
     #''type' 열 기준으로 데이터 분류
