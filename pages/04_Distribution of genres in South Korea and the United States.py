@@ -27,7 +27,7 @@ st.write(usa_data)
 
 
 with tab1:
-    data['main_genre'] = data['listed_in'].str.split(',').str[0]
+    # data['main_genre'] = data['listed_in'].str.split(',').str[0]
     sk_genre_counts = sk_data['listed_in'].str.split(',').explode().str.strip().value_counts()
   
     # DataFrame 생성
@@ -45,7 +45,7 @@ with tab1:
     st.pyplot(plt)
 
 with tab2:
-    data['main_genre'] = data['listed_in'].str.split(',').str[0]
+    # data['main_genre'] = data['listed_in'].str.split(',').str[0]
     usa_genre_counts = data['listed_in'].str.split(',').explode().str.strip().value_counts()
   
     # DataFrame 생성
