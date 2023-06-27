@@ -12,8 +12,8 @@ data = common.get_sales()
 # Tab 구성
 tab1, tab2 = st.tabs(["South Korea", "United States"])
 
-# sk_data = data[data['country'] == 'South Korea']
-# usa_data = data[data['country'] == 'United States']
+sk_data = data[data['country'] == 'South Korea']
+usa_data = data[data['country'] == 'United States']
 
 sk_type_counts = sk_data['release_year'].value_counts().sort_index()
 usa_data_counts = usa_data['type'].value_counts()
