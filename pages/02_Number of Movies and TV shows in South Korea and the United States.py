@@ -7,10 +7,13 @@ st.title("Number of Movies and TV shows in South Korea and the United States")
 data = common.get_sales()
 # Tab 구성
 tab1, tab2, tab3 = st.tabs(["South Korea", "United States", "Comparison"])
+
 sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']
+
 sk_data_counts = sk_data['type'].value_counts()
 usa_data_counts = usa_data['type'].value_counts()
+
 with tab1:
     #sk_data_counts = sk_data['type'].value_counts()
     colors = ['violet', 'mistyrose']
@@ -18,7 +21,6 @@ with tab1:
             wedgeprops={'edgecolor': 'white', 'width': 0.7}, colors=colors)
     plt.axis('equal')
     plt.title('Netflix Shows in South Korea')
-    plt.show()
     st.pyplot(plt)
    
 with tab2:
@@ -29,7 +31,7 @@ with tab2:
     plt.axis('equal')
     plt.title('Netflix Shows in the United States')
     st.pyplot(plt)
-    plt.show()
+   
 with tab3:
     #sk_data_counts = sk_data['type'].value_counts()
     #usa_data_counts = usa_data['type'].value_counts()
@@ -40,5 +42,4 @@ with tab3:
     plt.ylabel('Count')
     plt.title('Netflix Shows Comparison')
     plt.legend()
-    plt.show()
     st.pyplot(plt)
