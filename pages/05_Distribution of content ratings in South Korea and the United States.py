@@ -13,8 +13,8 @@ tab1, tab2 = st.tabs(["South Korea", "United States"])
 sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']
 
-sk_rating_counts = sk_data['rating'].value_counts().head(10)
-usa_rating_counts = usa_data['rating'].value_counts().head(10)
+sk_rating_counts = sk_data['rating'].value_counts().head(15)
+usa_rating_counts = usa_data['rating'].value_counts().head(15)
 
 with tab1:
   plt.pie(sk_rating_counts, labels=sk_rating_counts.index, autopct='%1.1f%%', colors=['skyblue', 'limegreen', 'orange', 'red', 'purple'])
