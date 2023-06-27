@@ -37,8 +37,8 @@ with tab1:
     plt.pie(sk_data_counts, labels=sk_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
     plt.axis('equal')
     plt.title('Netflix Shows in the South Korea')
-    plt.show()
-    st.pyplot()
+  
+    st.pyplot(plt)
    
 with tab2:
     #''type' 열 기준으로 데이터 분류
@@ -51,7 +51,7 @@ with tab2:
     plt.pie(usa_data_counts, labels=usa_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
     plt.axis('equal')
     plt.title('Netflix Shows in the United States')
-    plt.show()
+
     st.pyplot(plt)
    
 with tab3:
