@@ -30,6 +30,7 @@ with tab1:
   plt.xticks(sk_type_counts.index, sk_type_counts.index.astype(int), rotation=45)
   plt.title('Netflix Shows in the South Korea')
   plt.show()
+  st.pyplot()
 
 with tab2:
     #색깔
@@ -42,3 +43,4 @@ with tab2:
   plt.xticks(rotation=45)
   plt.title('Netflix Shows in the United States')
   plt.show()
+  st.pyplot()
