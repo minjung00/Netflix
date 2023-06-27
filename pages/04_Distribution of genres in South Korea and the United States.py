@@ -15,13 +15,11 @@ tab1, tab2 = st.tabs(["South Korea", "United States"])
 sk_data = data[data['country'] == 'South Korea']
 usa_data = data[data['country'] == 'United States']
 
-# South Korea DataFrame 생성
-genre_counts = sk_data['listed_in'].str.split(',').explode().str.strip().value_counts()
-genre_table = pd.DataFrame({'Genre': genre_counts.index, 'Count': genre_counts})
-top_10_genres = genre_table.head(10)
+data['main_genre'] = data['listed_in'].str.split(',').str[0]
 
-# United States DataFrame 생성
+genre_counts = sk_data['listed_in'].str.split(',').explode().str.strip().value_counts()
 genre_counts = data['listed_in'].str.split(',').explode().str.strip().value_counts()
+
 genre_table = pd.DataFrame({'Genre': genre_counts.index, 'Count': genre_counts})
 top_10_genres = genre_table.head(10)
 
